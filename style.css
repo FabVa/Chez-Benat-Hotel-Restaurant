@@ -1,0 +1,440 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Manropre', sans-serif;
+}
+
+
+/* 
+
+
+Tout ce qui concerne la NavBar
+
+
+*/
+
+nav{
+    height: 6em;
+    color: white;
+    background-color: #6a87a8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10em;
+}
+
+.logo{
+    max-height: 100%;
+    width: auto;
+}
+
+.TitreNav{
+    font-size: 1.5em;
+}
+
+
+/* 
+
+    Main - Section - Hotel
+
+*/
+
+.hotel{
+    background-color: white;
+    padding: 3em;
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.conteneurTexteHotel{
+    width: 100%;
+    height: 100%;
+}
+
+.textHotel{
+    font-size: 1.2em;
+    text-align: justify;
+    width: 100%;
+}
+
+.PhotosHotel{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 350px);
+    justify-items: center;
+    align-items: center;
+    width: 700px;
+    height: 700px;
+    gap: 1em;
+    margin-left: 2em;
+}
+.PhotosHotel img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+}
+
+.photoLarge{
+    grid-column: span 2;
+}
+
+.photoAAjouterPourTablette{
+    display: none;
+}
+
+ul{
+    list-style-type: none;
+    font-size: 1.1em;
+}
+
+.texteReservation{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    font-size: 1.1em;
+    gap: 2em;
+    margin-top: 2em;
+}
+
+.texteReservation span{
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.logoReservation{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.textNumeroTel{
+    font-size: 1em;
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/* 
+
+
+    Main - Section - Restaurant
+
+
+
+*/
+
+
+.Restaurant{
+    background-color: #6a87a8;
+    padding: 3em;
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+}
+
+.photoResto{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 700px;
+    height: 700px;
+    gap: 2em;
+}
+
+.photoResto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.textResto{
+    font-size: 1.3em;
+    text-align: justify;
+    width: 100%;
+    color: white;
+}
+
+.centrerTextResto{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+/* 
+
+
+FOOTER
+
+
+*/
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2em;
+    height: 6em;
+}
+
+.footerimg{
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    margin: 0 4em;
+}
+
+
+
+/* 
+
+
+Version - Tablette
+
+
+
+*/
+
+@media screen and (max-width : 895px){
+    
+    /* 
+    
+    nav
+
+    */
+
+        nav{
+            gap: 3em;
+        }
+        .logo{
+            width: 20em;
+        }
+
+   /* 
+   
+   Section - Main - Hotel
+   
+   */
+
+        .hotel{
+            padding: 2em;
+        }
+
+        .conteneurTexteHotel{
+            width: 100%;
+        }
+
+        .textHotel{
+            width: 90%;
+            font-size: 1em;
+        }
+        
+        .photoLarge{
+            grid-column: span 1;
+        }
+
+        .photoAAjouterPourTablette{
+            display: grid;
+        }
+
+        .photoAEnleverPourTablette{
+            display: none;
+        }
+        .PhotosHotel{
+            margin-left: 0em;
+            width: 100%;
+            height: 700px;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            object-position: bottom;
+        }
+
+        .PhotosHotel img{
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover; 
+            border-radius: 15px;  
+            margin-top: 1em;
+        }
+
+        ul{
+            font-size: 1em;
+        }
+
+        .texteReservation{
+            gap: 2em;
+            display: flex;
+            justify-content: center;
+        }
+
+        .logoReservation{
+            width: 50px;
+            height: 50px;
+        }
+
+        .textNumeroTel{
+            font-size: 0.9em;
+            width: 80%;
+            text-align: center;
+        }
+
+
+    /* 
+    
+    Section - Main - Restaurant
+    
+    */
+
+        .Restaurant{
+            padding: 2em;
+        }        
+
+        .photoResto{
+            width: 100%;
+            height: 700px;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+
+        .photoASupprimer{
+            display: none;
+        }
+
+        .photoResto img{
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover; 
+            border-radius: 15px;  
+        }
+        .textResto{
+            width: 100%;
+            font-size: 1em; 
+            text-align: center;
+        }
+
+
+    /* 
+    
+    Footer
+
+    */
+        
+        .footer{
+            height: 3em;
+            padding: 1em;
+        }
+}
+
+
+
+
+/* 
+
+
+Version Telephone
+
+
+*/
+
+    @media screen and (max-width : 495px){
+
+            /* 
+    
+            nav
+
+            */
+
+            nav{
+                gap: 1em;
+            }
+
+            .logo{
+                width: 10em;
+                margin-left: 1.5em;
+
+            }
+
+            .TitreNav{
+                font-size: 1em;
+            }
+
+
+            /* 
+   
+            Section - Main - Hotel
+                
+            */
+
+            .textHotel{
+                font-size: 0.9em;
+            }
+
+            .VersionTel{
+                width: 180%;
+                margin-top: 4em;
+            }
+
+            .textNumeroTel{
+                width: 100%;
+                text-align: center;
+            }
+
+
+            /* 
+            
+            Section - Main - Resto
+            
+            */
+
+            .photoResto{
+                width: 250%;
+                height: 500px;
+            }
+
+            .photoResto img{
+                width: 100%;
+            }
+
+            .centrerTextResto{
+                width: 100%;
+            }
+
+            .textResto{
+                margin-left: -2em;
+                width: 150px;
+            }
+
+
+            /* 
+            
+            Footer
+
+            */
+
+            .footerimg{
+                margin: 0 2em;
+
+            }
+            
+    }
