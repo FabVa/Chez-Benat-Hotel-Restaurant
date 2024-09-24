@@ -54,12 +54,14 @@ nav{
 .conteneurTexteHotel{
     width: 100%;
     height: 100%;
+    margin-right: 15px;
 }
 
 .textHotel{
     font-size: 1.2em;
     text-align: justify;
     width: 100%;
+    margin: 25px 0px;
 }
 
 .PhotosHotel{
@@ -153,7 +155,7 @@ a{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    width: 700px;
+    width: 1000px;
     height: 700px;
     gap: 2em;
 }
@@ -168,12 +170,15 @@ a{
 .textResto{
     font-size: 1.3em;
     text-align: justify;
-    width: 100%;
+    width: 70%;
     color: white;
+    margin: 30px 0px;
 }
 
 .centrerTextResto{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -223,10 +228,15 @@ Version - Tablette
     */
 
         nav{
-            gap: 3em;
+            gap: 6em;
         }
         .logo{
+            margin-left: 4em;
             width: 20em;
+        }
+
+        .TitreNav{
+            margin-right: -2.8em;
         }
 
    /* 
@@ -241,6 +251,8 @@ Version - Tablette
 
         .conteneurTexteHotel{
             width: 100%;
+            margin-right: 0;
+            margin-left: 10px;
         }
 
         .textHotel{
@@ -265,7 +277,7 @@ Version - Tablette
             height: 100%;
             display: grid;
             grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
             object-position: bottom;
         }
 
@@ -294,8 +306,12 @@ Version - Tablette
 
         .textNumeroTel{
             font-size: 0.9em;
-            width: 80%;
+            width: 100%;
             text-align: center;
+        }
+
+        .VersionTel{
+            width: 90%;
         }
 
 
@@ -376,7 +392,8 @@ Version Telephone
             }
 
             .TitreNav{
-                font-size: 1em;
+                font-size: 0.8em;
+                margin-right:-20px ;
             }
 
 
@@ -390,9 +407,19 @@ Version Telephone
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                padding-top: 20px;
             }
             .textHotel{
                 font-size: 0.9em;
+                width: 100%;
+                margin: 10px 0px;
+            }
+
+            .conteneurTexteHotel{
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
             }
 
             .VersionTel{
@@ -404,7 +431,13 @@ Version Telephone
                 text-align: center;
             }
 
+            ul{
+                font-size: 0.8em;
+            }
 
+            .textNumeroTel{
+                font-size: 0.7em;
+            }
             /* 
             
             Section - Main - Resto
@@ -427,6 +460,9 @@ Version Telephone
             .textResto{
                 margin-left: -2em;
                 width: 150px;
+                font-size: 0.8em;
+                margin-top: 10px;
+                margin-bottom: 10px;
             }
 
 
