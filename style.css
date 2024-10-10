@@ -126,6 +126,7 @@ a{
     margin-top: 2em;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 
@@ -228,15 +229,16 @@ Version - Tablette
     */
 
         nav{
-            gap: 6em;
+            gap: 5em;
         }
         .logo{
-            margin-left: 4em;
+            margin-left: 2em;
+            margin-right: -4em;
             width: 20em;
         }
 
         .TitreNav{
-            margin-right: -2.8em;
+            margin-right: -3.8em;
         }
 
    /* 
@@ -311,7 +313,7 @@ Version - Tablette
         }
 
         .VersionTel{
-            width: 90%;
+            width: 200%;
         }
 
 
@@ -388,7 +390,7 @@ Version Telephone
             .logo{
                 width: 10em;
                 margin-left: 1.5em;
-
+                margin-right: 0;
             }
 
             .TitreNav{
